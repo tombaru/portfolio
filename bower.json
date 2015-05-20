@@ -1,0 +1,37 @@
+{
+  "name": "pavel_efimov",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tombaru/pavel_efimov",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.3",
+    "qtip2": "~2.2.1"
+  },
+  "overrides": {
+    "qtip2": {
+      "main": [
+        "./jquery.qtip.js",
+        "./jquery.qtip.css"
+      ],
+      "dependencies": {
+        "jquery": ">=1.6.0"
+      }
+    }
+  }
+}

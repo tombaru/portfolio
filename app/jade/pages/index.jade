@@ -1,0 +1,68 @@
+block link
+  -var selected = 'Обо мне';
+
+extends ../layouts/main_layout.jade
+
+block title
+  title Главная страница 
+
+block content
+  section.aboutbox
+    h2.aboutbox-header Основная информация
+    .aboutbox-body.clearfix
+      .image-wrap
+        .avatar-box
+          img.avatar(src="img/face.jpg", alt="Ефимов Павел")
+      .worksheet-wrap
+        ul.worksheet-list
+          li.worksheet-item.clearfix
+            .worksheet-what Меня зовут:
+            .worksheet-info Ефимов Павел
+          li.worksheet-item.clearfix
+            .worksheet-what Мой возраст:
+            .worksheet-info 28 лет
+          li.worksheet-item.clearfix
+            .worksheet-what Мой город:
+            .worksheet-info Санкт Петербург, Россия
+          li.worksheet-item.clearfix
+            .worksheet-what Моя специализация:
+            .worksheet-info frontend разработчик
+          .worksheet-item.clearfix
+            .worksheet-what Ключевые навыки:
+            .worksheet-info.skills
+              ul.skills-list
+                li.skill-item html
+                li.skill-item css
+                li.skill-item sass
+                li.skill-item jade
+                li.skill-item javascript
+                li.skill-item gulp
+                li.skill-item git
+                li.skill-item photoshop
+  //- Опыт работы
+  section.aboutbox
+    h2.aboutbox-header Опыт работы
+    .aboutbox-body
+      ul.aboutbox-list
+        li.aboutbox-item.icon-work
+          .where РИА "Волекс" - seo-оптимизатор
+          .period 2010 - 2011
+          .where ООО "Элькадор" - seo-оптимизатор
+          .period 2011 - 2013          
+        li.aboutbox-item.icon-work
+          .where Фрилансер (seo, smm, frontend)
+          .period 2013 - по настоящее время          
+  //- Образование
+  section.aboutbox
+    h2.aboutbox-header Образование
+    .aboutbox-body
+      ul.aboutbox-list
+        li.aboutbox-item.icon-college
+          .where Высшее. СПбГУТ им. Бонч-Бруевича
+          .period 2004 - 2009
+        li.aboutbox-item.icon-course
+          .where Курсы Epic Skills
+          .period Декабрь 2014 - Март 2015          
+        li.aboutbox-item.icon-course
+          .where Курсы Loftschool
+          .period Март 2015 - по настоящее время

@@ -1,0 +1,20 @@
+doctype html
+html(lang="ru-RU")
+  include ../common/head.jade
+  body
+    .wrapper
+      .main-content
+        //- Шапка
+        include ../common/header.jade
+        .container  
+          //- Левые блоки
+          aside.sidebar
+            //- Навигация
+            include ../common/navigate.jade
+            //- Контакты
+            include ../common/contacts.jade      
+          //- Изменяемый контент
+          .variable-content
+            //- Изменяемая часть каждой страницы
+            block content
+    include ../common/footer.jade 

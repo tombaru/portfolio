@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Связаться со мной</title>
+    <meta name="description" content="loftschool_homework">
+    <meta name="keywords" content="loftschool_homework">
+    <meta name="author" content="Pavel Efimov">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="fonts/proximanovacond-semibold.css" rel="stylesheet">
+    <link href="fonts/fira.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/qtip2/jquery.qtip.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="main-content">
+        <header class="page-header">
+          <div class="container-big">
+            <a class="header-logo-link"><img src="img/logo.png" alt="logo" class="logo-img"><span class="header-logo-text">Сайт портфолио</span></a>
+            <ul class="socials">
+              <li class="socials-item">
+                <a href="http://vk.com/id15716" target="_blank" class="socials-link vk"></a>
+              </li>
+              <li class="socials-item">
+                <a href="#" target="_blank" class="socials-link tw"></a>
+              </li>
+              <li class="socials-item">
+                <a href="#" target="_blank" class="socials-link fb"></a>
+              </li>
+              <li class="socials-item">
+                <a href="https://github.com/tombaru/" target="_blank" class="socials-link gt"></a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div class="container">
+          <aside class="sidebar">
+            <nav class="navigation">
+              <ul class="navigation-list">
+                <li class="navigation-item"><a href="/" class="navigation-link">Обо мне</a></li>
+                <li class="navigation-item"><a href="/portfolio.html" class="navigation-link">Мои работы</a></li>
+                <li class="navigation-item current"><a href="/contact.html" class="navigation-link">Связаться со мной</a></li>
+              </ul>
+            </nav><address class="contacts"><div class="contacts-header"><span class="header-inner-text">Контакты</span></div><ul class="contacts-list"><li class="contacts-item contacts-item-mail"><a href="mailto:flashfair@gmail.com" class="contacts-link"><span class="contact-text">flashfair@gmail.com</span></a></li><li class="contacts-item contacts-item-phone"><a href="tel:+79214017868" class="contacts-link"><span class="contact-text">+79214017868</span></a></li><li class="contacts-item contacts-item-skype"><a href="skype:tombaru" class="contacts-link"><span class="contact-text">tombaru</span></a></li></ul></address></aside>
+          <div
+          class="variable-content">
+            <section class="aboutbox">
+              <div class="header-big-wrap">
+                <h2 class="aboutbox-header-big">У вас интересный проект? Напишите мне!</h2></div>
+              <div class="aboutbox-body">
+                <div class="contact-form-wrap">
+                  <form id="contact-me" class="form contact-form">
+                    <div class="server-mes error-mes"></div>
+                    <div class="server-mes success-mes"></div>
+                    <div class="form-line clearfix">
+                      <div class="form-group pull-left">
+                        <label for="name" class="label">Имя</label>
+                        <input type="text" name="name" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя" class="input">
+                      </div>
+                      <div class="form-group pull-right">
+                        <label for="email" class="label">Email</label>
+                        <input type="text" name="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email" class="input">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="message" class="label">Сообщение</label>
+                      <textarea id="message" name="message" rows="3" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?" class="textarea"></textarea>
+                    </div>
+                    <div class="form-group captcha-wrap clearfix">
+                      <label for="captcha" class="label">Введите код, указанный на картинке</label><img src="img/captcha.png" alt="код" class="captcha pull-left">
+                      <input type="text" name="captcha" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код" class="input input-captcha pull-right">
+                    </div>
+                    <div class="button-group">
+                      <button type="submit" class="btn">Отправить</button>
+                      <button type="reset" class="btn btn-res">Очистить</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="lock">
+          <a href="/login.html" class="lock-inner"></a>
+        </div>
+        <div class="copyright">© 2015, Это сайт Ефимова Павла, пожалуйста, не копируйте и не воруйте его</div>
+      </div>
+    </footer>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/qtip2/jquery.qtip.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+
+</html>

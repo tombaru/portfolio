@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Авторизация</title>
+    <meta name="description" content="loftschool_homework">
+    <meta name="keywords" content="loftschool_homework">
+    <meta name="author" content="Pavel Efimov">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="fonts/proximanovacond-semibold.css" rel="stylesheet">
+    <link href="fonts/fira.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/qtip2/jquery.qtip.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
+<![endif]-->
+    <div class="wrapper">
+      <div class="main-content">
+        <div class="login-container">
+          <div class="modal-wrapper login-wrapper">
+            <div class="modal-header">
+              <h2 class="modal-title">Авторизуйтесь</h2></div>
+            <div class="modal-body">
+              <form id="login" role="form" class="form">
+                <div class="server-mes error-mes"></div>
+                <div class="server-mes success-mes"></div>
+                <div class="form-group">
+                  <label for="login" class="label">Логин</label>
+                  <input id="name" type="text" name="login" placeholder="Введите логин" qtip-content="Вы не ввели логин" class="input">
+                </div>
+                <div class="form-group">
+                  <label for="password" class="label">Пароль</label>
+                  <input id="password" type="password" name="login" placeholder="Введите пароль" qtip-content="Вы не ввели пароль" class="input">
+                </div>
+                <button type="submit" class="btn">Войти</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="lock">
+          <a href="/login.html" class="lock-inner"></a>
+        </div>
+        <div class="copyright">© 2015, Это сайт Ефимова Павла, пожалуйста, не копируйте и не воруйте его</div>
+      </div>
+    </footer>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/qtip2/jquery.qtip.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+
+</html>

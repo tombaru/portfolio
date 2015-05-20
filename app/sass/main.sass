@@ -1,0 +1,262 @@
+html
+  height: 100%
+
+body
+  height: 100%
+  background: url(../img/background.jpg) repeat
+  font: normal 1em 'fira_sanslight'
+  color: #4a545d
+
+.wrapper
+  position: relative
+  min-height: 100%
+  min-width: 970px
+
+  height: auto !important
+  overflow: hidden
+
+.wrapper:after
+  content: ""
+  height: 80px
+  display: block
+
+.page-footer
+  height: 80px
+  margin-top: -80px
+
+
+.container-big
+  max-width: 1200px
+  min-width: 960px
+  height: 100%
+  margin: 0 auto
+  position: relative
+
+.page-header
+  height: 119px
+  background: #eff3f7 url(../img/line-head.png) bottom center no-repeat
+  position: relative
+  margin-bottom: 39px
+
+.page-header .header-logo-link
+  position: absolute
+  top: 39px
+  left: 0
+
+.page-header .header-logo-text
+  position: absolute
+  left: -9999px
+
+.page-header .socials
+  position: absolute
+  right: 0
+  top: 36px
+
+.socials
+  margin: 0
+  padding: 0
+  min-width: 260px
+
+.socials .socials-item
+  list-style: none
+  display: inline-block
+  height: 47px
+  width: 47px
+  margin-left: 19px
+
+
+.socials .socials-item:first-child
+  margin-left: 0
+
+.socials .socials-link
+  display: block
+  height: 100%
+  width: 100%
+  text-indent: -9999px
+  background: url(../img/sprite_social.png) no-repeat
+
+.socials .socials-link.vk
+  background-position: 0px 0px
+
+.socials .socials-link.tw
+  background-position: -48px 0px
+
+.socials .socials-link.fb
+  background-position: -96px 0px
+
+.socials .socials-link.gt
+  background-position: -144px 0px
+
+.socials .socials-link:hover
+  background-position-y: -49px
+
+
+.sidebar
+  width: 250px
+  float: left
+
+
+.navigation
+  overflow: hidden
+  background: #eff3f7
+  border-radius: 4px
+  margin-bottom: 26px
+
+.navigation .navigation-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+.navigation .navigation-item
+  border-top: 2px solid #3ba8c0
+  margin: 0 11px
+
+.navigation .navigation-item:first-child
+  border-top: none
+
+
+.navigation .navigation-item.current
+  background: #3ba8c0
+  margin: 0
+  border-bottom: none
+  padding-left: 11px
+  margin-bottom: -2px
+
+
+.navigation .navigation-item.current .navigation-link
+  color: #f9fafb
+  font-size: 22px
+
+
+.navigation .navigation-link
+  font-family: 'fira_sansbook'
+  display: block
+  font-size: 20px
+  text-decoration: none
+  color: #959aa8
+  margin-left: 16px
+  padding: 20px 0px
+
+.navigation .navigation-link:hover
+  color: #3ba8c0
+
+
+.contacts
+  font-style: normal
+  font-family: 'fira_sansbook'
+  background: #3ba8c0
+  overflow: hidden
+  border-radius: 4px
+  margin-bottom: 26px
+  color: white
+
+.contacts .contacts-header
+  background: #3ba8c0
+  border-radius: 4px 4px 0 0
+  padding: 8px 19px 1px
+
+.contacts .header-inner-text
+  font-size: 20px
+  margin: 0
+  display: block
+
+.contacts .contacts-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+.contacts .contacts-link
+  display: block
+  text-decoration: none
+  padding: 6px 0 6px 82px
+
+.contacts .contact-text
+  line-height: 1.3
+  font-size: 15px
+  color: white
+
+.contacts .contacts-item
+  
+
+.contacts .contacts-item-mail
+  background: rgb(65, 185, 212) url(../img/icon-cont-mail.png) 42px center no-repeat
+
+.contacts .contacts-item-phone
+  background: rgb(72, 203, 232) url(../img/icon-cont-phone.png) 42px center no-repeat
+
+.contacts .contacts-item-skype
+  background: rgb(81, 218, 248) url(../img/icon-cont-skype.png) 42px center no-repeat
+
+.contacts .contact-text:hover
+  border-bottom: 1px solid #fff
+
+
+.variable-content
+  width: 650px
+  float: right
+
+
+.page-footer
+  background: #eff3f7 url(../img/line.png) top center no-repeat
+  font-family: 'fira_sanslight'
+  color: #4a545d
+
+.page-footer .container
+  padding-top: 23px
+  position: relative
+
+.page-footer .copyright
+  margin: 0 180px
+  padding-top: 7px
+  text-align: center
+  font-size: 14px
+
+
+.page-footer .lock
+  height: 32px
+  width: 18px
+
+
+.lock .lock-inner
+  display:block 
+  height: 40px
+  font-family: 'fira_sansbook'
+  font-size: 16px
+  line-height: 16px
+  color: #4a545d
+  text-decoration: none
+  background: url(../img/login_lock.png) no-repeat
+  background-position: 4px 0px
+  padding-left: 24px
+
+.lock .lock-inner:hover
+  text-decoration: underline
+  background: url(../img/login_lock.png) no-repeat
+  background-position: -20px 0px
+
+.container
+  width: 960px
+  margin: 0 auto
+
+.text-center
+  text-align: center
+
+.pull-left
+  float: left !important
+
+.pull-right
+  float: right !important
+
+
+
+.container:before, .clearfix:before,
+.container:after, .clearfix:after
+  content: " "
+
+  display: table
+ 
+
+.container:after, .clearfix:after
+  clear: both
+
+
