@@ -1,69 +1,65 @@
-// // Модуль добавления проекта
-// var addProject = (function (){
+// Модуль обратной связи
+var addProject = (function (){
 
-// 	var init = function(){
-// 				console.log('Инициализация модуля addProject');
-// 				_setUpListners();
-// 			},
-// 			_setUpListners = function (){
-// 				$('#add-new-item').on('click', _showModal); // открыть модальное окно
-// 				$('#add-new-project').on('submit', _addProject); // добавление проекта
-// 			},
-// 			_showModal = function (){
-//       	console.log('Вызов модального окна');
-// 	      $('#new-progect-popup').bPopup({
-// 	        speed: 650,
-// 	        transition: 'slideDown',
-// 	        onClose: function () {
-// 	          this.find('.form').trigger("reset"); // сбрасываем форму
-// 	        }
-// 	      });
-//     	},
-//     	_addProject = function (ev){
-//     		console.log('Работаем с формой добавления проекта');
+  var init = function(){
+        console.log('Инициализация модуля addProject');
+        _setUpListners();
+      },
 
-// 	      ev.preventDefault();
+      _setUpListners = function () {
+        $('#add-project').on('submit', _submitForm);
+      },
+      _submitForm = function (e) {
+        console.log('Сабмит формы');
 
-// 	      var form = $(this),
-// 	          url = '/ajax.php',
-// 	          defObject = _ajaxForm(form, url);
+        e.preventDefault();
 
-// 	      if (defObject) {
-// 	        defObject.done(function(ans) {
-// 	          var mes = ans.mes,
-// 	              status = ans.status;
+        var form = $(this),
+            url = '/ajax.php',
+            defObject = _ajaxForm(form, url);
 
-// 	          if ( status === 'OK'){
-// 	            form.trigger('reset');
-// 	            form.find('.success-mes').text(mes).show();
-// 	            // TODO: отрисовать новый элемент в DOM при помощи js шаблона
-// 	            location.reload(); // сразу перезагрузим страницу
-// 	          } else{
-// 	            form.find('.error-mes').text(mes).show();
-// 	          }
-// 	        });
-// 	      }      
-//     	},
-// 	    _ajaxForm = function (form, url) {
-      
-// 	      if (!validation.validateForm(form)) return false;  // Возвращает false, если не проходит валидацию 
-// 	      var data = form.serialize(); // собираем данные из формы в объект data
+        if (defObject) {
+            defObject.done(function(answer) {
+              var message = answer.message,
+                  status = answer.status;
 
-// 	      return $.ajax({ // Возвращает Deferred Object
-// 	        type: 'POST',
-// 	        url: url,
-// 	        dataType : 'JSON',
-// 	        data: data
-// 	      }).fail( function(ans) {
-// 	        console.log('Проблемы в PHP');
-// 	        form.find('.error-mes').text('На сервере произошла ошибка').show();
-// 	      });
-// 	    };   
+              if (status === 'OK'){
+                form.trigger('reset');
+                form.find('.success-message').text(message).show();
+              } else {
+                form.find('.error-message').text(message).show();
+              }
 
-// 	return {
-// 		init: init
-// 	};
+            });
+        }
 
-// })();
+      },
+      _ajaxForm = function (form, url) {
 
-// addProject.init();
+        // вовзращает false, если не проходит валидация
+        if (!validation.validateForm(form)) return false;
+
+        var data = form.serialize();
+
+        return $.ajax({
+
+          type: 'POST',
+          url: url,
+          dataType: 'JSON',
+          data: data
+
+        }).fail( function(answer) {
+            console.log('Проблемы в PHP');
+            form.find('.error-message').text('На сервере произошла ошибка').show();
+        });
+
+
+      };
+
+
+  return {
+    init: init,
+  };
+})();
+
+addProject.init();

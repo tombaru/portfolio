@@ -6,6 +6,12 @@
     "gulp-jade": "^1.0.0",
     "gulp-prettify": "^0.3.0",
     "gulp-sass": "^2.0.1",
-    "opn": "^1.0.2"
+    "gulp-util": "^3.0.7",
+    "opn": "^1.0.2",
+    "rimraf": "^2.4.4",
+    "gulp-useref": "^1.2.0",
+    "gulp-minify-css": "^1.1.6",
+    "gulp-rimraf": "^0.1.1",
+    "vinyl-ftp": "^0.4.5"
   }
 }

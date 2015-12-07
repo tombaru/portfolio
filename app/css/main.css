@@ -3,16 +3,19 @@ html {
 
 body {
   height: 100%;
-  background: url(../img/background.jpg) repeat;
+  background: url(../img/background.png) repeat;
   font: normal 1em "fira_sanslight";
-  color: #4a545d; }
+  color: #4a545d;
+  margin: 0;
+}
 
 .wrapper {
   position: relative;
   min-height: 100%;
   min-width: 970px;
   height: auto !important;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .wrapper:after {
   content: "";
@@ -21,25 +24,33 @@ body {
 
 .page-footer {
   height: 80px;
-  margin-top: -80px; }
+  margin-top: -80px;
+}
 
 .container-big {
   max-width: 1200px;
   min-width: 960px;
   height: 100%;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+}
 
 .page-header {
   height: 119px;
   background: #eff3f7 url(../img/line-head.png) bottom center no-repeat;
   position: relative;
-  margin-bottom: 39px; }
+  margin-bottom: 39px;
+}
 
-.page-header .header-logo-link {
+.site-logo {
   position: absolute;
   top: 39px;
-  left: 0; }
+  left: 0;
+}
+
+.site-logo:hover {
+  opacity: 0.8;
+}
 
 .page-header .header-logo-text {
   position: absolute;
@@ -188,35 +199,37 @@ body {
   color: #4a545d; }
 
 .page-footer .container {
-  padding-top: 23px;
-  position: relative; }
+  position: relative;
+  text-align: center;
+}
 
 .page-footer .copyright {
-  margin: 0 180px;
-  padding-top: 7px;
   text-align: center;
-  font-size: 14px; }
+  font-size: 14px;
+  margin-top: 30px;
+  display: inline-block;
+}
 
-.page-footer .lock {
-  height: 32px;
-  width: 18px; }
+.lock {
+  float: left;
+  display: inline-block;
+  margin-top: 26px;
+}
 
-.lock .lock-inner {
+.lock-inner {
   display: block;
-  height: 40px;
+  height: 32px;
   font-family: 'fira_sansbook';
-  font-size: 16px;
-  line-height: 16px;
-  color: #4a545d;
   text-decoration: none;
-  background: url(../img/login_lock.png) no-repeat;
-  background-position: 4px 0px;
-  padding-left: 24px; }
+  background: url(../img/login_lock.png) no-repeat top left;
+  width: 20px;
+}
 
-.lock .lock-inner:hover {
+.lock-inner:hover {
   text-decoration: underline;
-  background: url(../img/login_lock.png) no-repeat;
-  background-position: -20px 0px; }
+  background: url(../img/login_lock.png) no-repeat top left;
+  background-position: -20px 0px;
+}
 
 .container {
   width: 960px;
