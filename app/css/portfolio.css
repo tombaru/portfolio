@@ -9,9 +9,7 @@
 
 .example__img-wrapper {
   position: relative;
-  overflow: hidden;
-  height: 130px;
-}
+  overflow: hidden; }
 
 .example__img {
   border: 2px solid #3ba8c0;
