@@ -1,10 +1,15 @@
-Installation
+<h1>Installation</h1>
 
-You need Gulp installed globally:
+<h3>You need Gulp installed globally:<h3>
 
-$ npm i -g gulp
-$ git clone https://github.com/sennewsonn/workflow112015.git site
-$ cd site
-$ bower i
-$ npm i
-$ gulp
+<p>$ npm i -g gulp</p>
+<p>$ git clone https://github.com/tombaru/portfolio.git site</p>
+<p>$ cd site</p>
+<p>$ bower i</p>
+<p>$ npm i</p>
+<p>$ gulp</p>
+
+
+
+
+
