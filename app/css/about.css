@@ -46,11 +46,6 @@
   padding: 0;
   margin: 0; }
 
-.worksheet-info {
-  float: left;
-  margin-left: 25px;
-  max-width: 260px; }
-
 .worksheet-item {
   margin-bottom: 8px; }
 
@@ -64,7 +59,9 @@
   font-family: 'fira_sansbook';
   font-size: 15px;
   overflow: hidden;
-  max-width: 180px; }
+  max-width: 180px;
+  float: left;
+  margin-left: 10px; }
 
 /* Список анкетных данных - конец */
 /* Ключевые навыки */
@@ -92,7 +89,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3ba8c0', endColorstr='#2e8ca2',GradientType=0 );
   /* IE6-9 */
   border-radius: 4px;
-  padding: 0 7px;
+  padding: 3px 10px;
   margin-right: 6px;
   margin-bottom: 8px;
   color: white;
