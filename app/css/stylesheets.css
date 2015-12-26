@@ -19,6 +19,10 @@ textarea.has-error {
   border-color: #f97e76;
   background: #fad2d1; }
 
+input.input.has-error {
+  border-color: #f97e76;
+  background: #fad2d1; }
+
 .input, .textarea {
   border: 1px solid #48cbe8;
   -webkit-border-radius: 4px;

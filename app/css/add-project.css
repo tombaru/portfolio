@@ -24,7 +24,10 @@
   width: 364px;
   border-radius: 4px;
   background: white;
-  overflow: hidden; }
+  overflow: hidden;
+  position: absolute;
+  top: 20%;
+  left: 40%; }
 
 .add-project__inner {
   padding: 12px 21px 22px; }
