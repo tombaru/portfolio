@@ -10,8 +10,8 @@ var app = (function(){
   };
 
   var showText =function(){
-    console.log($(this).val());
-    $('.fake-upload').html($(this).val());
+    console.log($(this).val().substr(12));
+    $('.fake-upload').html($(this).val().substr(12));
   };
 
 

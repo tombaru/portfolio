@@ -19,7 +19,7 @@ textarea.has-error {
   border-color: #f97e76;
   background: #fad2d1; }
 
-input.input.has-error {
+.input.input.has-error {
   border-color: #f97e76;
   background: #fad2d1; }
 
