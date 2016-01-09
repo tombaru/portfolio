@@ -64,7 +64,7 @@
     height: 30px; }
 
 .textarea {
-  width: 100%; }
+  max-width: 100%; }
 
 .input, .textarea {
   border: 1px solid;

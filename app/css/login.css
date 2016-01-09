@@ -1,6 +1,6 @@
 .login-container {
   position: absolute;
-  top: 0;
+  top: 80px;
   bottom: 80px;
   right: 0;
   left: 0; }
@@ -37,7 +37,6 @@
   font-size: 35px; }
 
 .login-wrapper .modal-header {
-  padding-top: 15px;
   padding-bottom: 15px;
   border-width: 0 0 15px 0; }
 
@@ -53,7 +52,6 @@
   text-align: center;
   color: white;
   font-family: 'fira_sansbook';
-  font-size: 27px;
   border-bottom: 16px solid #51daf8; }
 
 .login-wrapper .form-group {

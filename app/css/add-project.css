@@ -90,6 +90,6 @@
   bottom: 0;
   width: 52px;
   height: 39px;
-  background: #48cbe8;
+  background: #48cbe8 url("../img/browse-icon.png") no-repeat 50% 50%;
   border-radius: 0 4px 4px 0;
   z-index: 2; }

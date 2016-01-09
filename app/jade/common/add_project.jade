@@ -1,31 +1,23 @@
 form#add-project.white-popup-block.mfp-hide.add-project__form
   .add-project__title Добавление проекта
-
-  .success-message Success!
-  .error-message Error!
-
+  .success-message
+  .error-message
   .add-project__inner
-
     .add-project__row
       label.label(for='name') Название проекта
       input.input(type='text', name='name', placeholder='Введите название', qtip-content='Вы не ввели название')
-
     .add-project__row
       label.label(for='name') Картинка проекта
       .custom-upload
         input.add-project__input.input-file(type='file', name='name')
         .fake-upload
           .icon-upload
-          input.input(type='text', 'readonly', placeholder='Загрузите изображение', qtip-content='Вы не загрузили изображение')
-
+          input.input(type='text', placeholder='Загрузите изображение', qtip-content='Вы не загрузили изображение')
     .add-project__row
       label.label(for='name') URL проекта
       input.input(type='name', name='name', placeholder='Добавьте ссылку', qtip-content='Вы не загрузили изображение')
-
-
     .add-project__row
       label.label(for='message') Описание
       textarea#message.textarea(name='message', rows='3', placeholder='Пара слов о проекте', qtip-content='Пару слов о проекте please :)')
-
     .add-project__button-wrapper
       button.btn.btn--blue(type='submit') Отправить

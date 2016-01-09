@@ -1,54 +1,51 @@
 block link
-  -var selected = 'Портфолио';
+  -var selected = 'Мои работы';
 
 extends ../layouts/main_layout.jade
 
 block title
-  title Портфолио 
+  title Портфолио
 
 block content
   .content__wrapper
-    .content__title Мои работы
-    .content__inner--layout.clearfix
-
-      .example
-        .example__img-wrapper
-          img.example__img(alt="", src="../img/template_01.jpg")
-          a.example__hover-wrapper(href="#")
-            span.example__hover-button template_01
-        a.example__link(href="") www.site1.ru)
-        .example__text Lorem ipsum dolor sit amet.
-
-      .example
-        .example__img-wrapper
-          img.example__img(alt="", src="../img/template_02.jpg")
-          a.example__hover-wrapper(href="#")
-            span.example__hover-button template_02
-        a.example__link(href="") www.site2.ru
-        .example__text Lorem ipsum dolor sit amet, consectetur.
-
-      .example
-        .example__img-wrapper
-          img.example__img(alt="", src="../img/template_03.jpg")
-          a.example__hover-wrapper(href="#")
-            span.example__hover-button template_03
-        a.example__link(href="") www.site3.ru
-        .example__text Lorem ipsum dolor sit amet, consectetur adipisicing.
-
-      .example
-        .example__img-wrapper
-          img.example__img(alt="", src="../img/template_04.jpg")
-          a.example__hover-wrapper(href="#")
-            span.example__hover-button template_04
-        a.example__link(href="") www.site4.ru
-        .example__text Lorem ipsum dolor sit amet, consectetur.
-
-      .example
-        .example__img-wrapper
-          img.example__img(alt="" src="../img/template_02.jpg")
-          a.example__hover-wrapper(href="#")
-            span.example__hover-button template_05
-        a.example__link(href="") www.site5.ru
-        .example__text Lorem ipsum dolor sit amet, consectetur adipisicing.
-
-      a.example.add-new Добавить проект
+    section.portfoliobox
+      h2.portfoliobox-header Мои работы
+      .content__inner--layout.clearfix
+        .portfoliobox-body.clearfix
+          .example
+            .example__img-wrapper
+              img.example__img(alt='', src='../img/template_01.jpg')
+              a.example__hover-wrapper(href='#')
+                span.example__hover-button template_01
+            a.example__link(href='') www.site1.ru)
+            .example__text Lorem ipsum dolor sit amet.
+          .example
+            .example__img-wrapper
+              img.example__img(alt='', src='../img/template_02.jpg')
+              a.example__hover-wrapper(href='#')
+                span.example__hover-button template_02
+            a.example__link(href='') www.site2.ru
+            .example__text Lorem ipsum dolor sit amet, consectetur.
+          .example
+            .example__img-wrapper
+              img.example__img(alt='', src='../img/template_03.jpg')
+              a.example__hover-wrapper(href='#')
+                span.example__hover-button template_03
+            a.example__link(href='') www.site3.ru
+            .example__text Lorem ipsum dolor sit amet, consectetur adipisicing.
+          .example
+            .example__img-wrapper
+              img.example__img(alt='', src='../img/template_04.jpg')
+              a.example__hover-wrapper(href='#')
+                span.example__hover-button template_04
+            a.example__link(href='') www.site4.ru
+            .example__text Lorem ipsum dolor sit amet, consectetur.
+          .example
+            .example__img-wrapper
+              img.example__img(alt='', src='../img/template_02.jpg')
+              a.example__hover-wrapper(href='#')
+                span.example__hover-button template_05
+            a.example__link(href='') www.site5.ru
+            .example__text Lorem ipsum dolor sit amet, consectetur adipisicing.
+          a.example.add-new.popup-with-form(href='#add-project') Добавить проект
+          include ../common/add_project.jade
